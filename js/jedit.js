@@ -10,7 +10,7 @@ $(".runButton").click(function() {
     });
 });
 
-var socket = io.connect('localhost:7070');
+var socket = io.connect('http://163.172.182.52:7070/');
 
 socket.on('message', function(data) {
     $('#result').text(data.message);
